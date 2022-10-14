@@ -18,12 +18,14 @@ print('Yes, I think that is correct. Thanks!')
 # ask user to guess age
 myage = random.randint(10,20)
 ageguess = input('Can you guess my age? - enter a number 10 - 20: ')
+ageguess = int(ageguess)
 while not (ageguess==myage):
     if ageguess <myage:
         print('Too low. Try a higher number.')
     else:
         print('Too high. Try a lower number.')
     ageguess = input('Can you guess my age? - enter a number 10 - 20: ')
+    ageguess = int(ageguess)
 print('Yes you are correct. I am', myage,'.')
 
 # do math to calaulate when chatbot will be 100
